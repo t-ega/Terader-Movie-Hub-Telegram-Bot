@@ -24,7 +24,7 @@ These instructions will get you a copy of the project up and running on your loc
 # Deployment
 This bot can be deployed on a hosting service that supports Python, such as Heroku or DigitalOcean.
 
-#Built With
+# Built With
 - Python - Programming language
 - Telegram Bot API - API for Telegram Bots
 - Python Telegram Bot - Python wrapper for Telegram Bot API
