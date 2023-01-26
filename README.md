@@ -1,5 +1,5 @@
 # Terader-Movie-Hub-Telegram-Bot
-Movie Finder Telegram Bot
+
 A Telegram bot that helps users search and download movies.
 
 Getting Started
@@ -15,6 +15,8 @@ Clone the repository by running the command git clone https://github.com/usernam
 Install the required libraries by running pip install -r requirements.txt
 Add your Telegram Bot API Token in the config.py file
 Run the script with python main.py
+
+
 Usage
 Start a chat with the bot
 Send the command /movie followed by the name of the movie you want to search for
@@ -42,7 +44,7 @@ Akpojiyovwi Tega - Initial work - YourName
 
 
 Acknowledgments
-www.tmbd.org for all movie details and api
+www.themoviedb.org/ for all movie details and api
 
 NOTE:
 It is illegal to download copyrighted material without permission
