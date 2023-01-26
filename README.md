@@ -1,13 +1,18 @@
 # Terader-Movie-Hub-Telegram-Bot
 🎥 A Telegram bot that helps users search and download movies.
 
-Getting Started
+![alt search](https://res.cloudinary.com/dkhelyskt/image/upload/v1674738007/Screenshot_20230126_015717_wwpidv.png)
+![alt search](https://res.cloudinary.com/dkhelyskt/image/upload/v1674738007/Screenshot_20230126_015739_mwmo11.png)
+![alt search](https://res.cloudinary.com/dkhelyskt/image/upload/v1674738007/Screenshot_20230126_015810_n4hykf.png)
+![alt search](https://res.cloudinary.com/dkhelyskt/image/upload/v1674738007/Screenshot_20230126_015827_cfxmf7.png)
+
+# Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 # Prerequisites
-- Python 3.x - Programming language used for the project
+- Python 3.10 - Programming language used for the project
 - Telegram Bot API Token - API token for the Telegram Bot
-- pyTelegramBotAPI - Python wrapper for Telegram Bot API
+- Python Telegram Bot - Python wrapper for Telegram Bot API
 - requests - Library for making HTTP requests
 # Installing
 1. Clone the repository by running the command git clone https://github.com/t-ega/Terader-Movie-Hub-Telegram-Bot.git
@@ -17,9 +22,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 # Usage
 1. Start a chat with the bot
-2. Send the command /movie followed by the name of the movie you want to search for
+2. Send the name of the movie you want to search for
 3. The bot will display a list of matching movies with their details
-4. Select the movie you want to download by sending the corresponding number
+4. Select the movie you want to download/view by clicking on the movie number prefixed by '/m_' or '/s_' e.g /m_18203
 5. Follow the prompts on the screen to download the movie
 # Deployment
 This bot can be deployed on a hosting service that supports Python, such as Heroku or DigitalOcean.
