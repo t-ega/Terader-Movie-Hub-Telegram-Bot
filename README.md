@@ -9,13 +9,13 @@ These instructions will get you a copy of the project up and running on your loc
 - Telegram Bot API Token - API token for the Telegram Bot
 - pyTelegramBotAPI - Python wrapper for Telegram Bot API
 - requests - Library for making HTTP requests
-**Installing**
+# Installing
 1. Clone the repository by running the command git clone https://github.com/t-ega/Terader-Movie-Hub-Telegram-Bot.git
 2. Install the required libraries by running pip install -r requirements.txt
 3. Add your Telegram Bot API Token in the config.py file
 4. Run the script with python main.py
 
-**Usage**
+# Usage
 Start a chat with the bot
 Send the command /movie followed by the name of the movie you want to search for
 The bot will display a list of matching movies with their details
