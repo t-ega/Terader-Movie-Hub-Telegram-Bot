@@ -16,19 +16,19 @@ These instructions will get you a copy of the project up and running on your loc
 4. Run the script with python main.py
 
 # Usage
-Start a chat with the bot
-Send the command /movie followed by the name of the movie you want to search for
-The bot will display a list of matching movies with their details
-Select the movie you want to download by sending the corresponding number
-Follow the prompts on the screen to download the movie
-**Deployment**
+1. Start a chat with the bot
+2. Send the command /movie followed by the name of the movie you want to search for
+3. The bot will display a list of matching movies with their details
+4. Select the movie you want to download by sending the corresponding number
+5. Follow the prompts on the screen to download the movie
+# Deployment
 This bot can be deployed on a hosting service that supports Python, such as Heroku or DigitalOcean.
 
 #Built With
-Python - Programming language
-Telegram Bot API - API for Telegram Bots
-Python Telegram Bot - Python wrapper for Telegram Bot API
-requests - Library for making HTTP requests
+- Python - Programming language
+- Telegram Bot API - API for Telegram Bots
+- Python Telegram Bot - Python wrapper for Telegram Bot API
+- requests - Python Library for making HTTP requests
 
 # Authors
 Akpojiyovwi Tega
