@@ -4,7 +4,7 @@
 Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-**Prerequisites**
+# Prerequisites
 - Python 3.x - Programming language used for the project
 - Telegram Bot API Token - API token for the Telegram Bot
 - pyTelegramBotAPI - Python wrapper for Telegram Bot API
@@ -24,16 +24,16 @@ Follow the prompts on the screen to download the movie
 **Deployment**
 This bot can be deployed on a hosting service that supports Python, such as Heroku or DigitalOcean.
 
-**Built With**
+#Built With
 Python - Programming language
 Telegram Bot API - API for Telegram Bots
 Python Telegram Bot - Python wrapper for Telegram Bot API
 requests - Library for making HTTP requests
 
-**Authors**
+# Authors
 Akpojiyovwi Tega
 
-**Acknowledgments**
+# Acknowledgments
 www.themoviedb.org for all movie details and api
-**Note**
-It is illegal to download copyrighted material without permission
+# Note
+It is **illegal** to download copyrighted material without permission
