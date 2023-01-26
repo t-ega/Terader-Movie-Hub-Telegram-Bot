@@ -11,7 +11,7 @@ Telegram Bot API Token - API token for the Telegram Bot
 pyTelegramBotAPI - Python wrapper for Telegram Bot API
 requests - Library for making HTTP requests
 Installing
-Clone the repository by running the command git clone https://github.com/username/movie-finder-telegram-bot.git
+Clone the repository by running the command git clone https://github.com/t-ega/Terader-Movie-Hub-Telegram-Bot.git
 Install the required libraries by running pip install -r requirements.txt
 Add your Telegram Bot API Token in the config.py file
 Run the script with python main.py
