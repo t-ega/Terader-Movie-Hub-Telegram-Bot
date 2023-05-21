@@ -3,20 +3,8 @@ import requests
 import asyncio
 import io
 import urllib.request
-from telegram import InlineKeyboardButton
-
 api_key = os.environ.get('tmdbApiKey')
 
-
-def reply_keyboards():
-    keyboard = [[InlineKeyboardButton(text='Torrent downloader for windows',
-                                      url='https://www.utorrent.com/downloads/win/')],
-                [InlineKeyboardButton(text='Torrent downloader for mac',
-                                      url='https://www.utorrent.com/downloads/complete/track/stable/os/mac/')],
-                [InlineKeyboardButton(text='Torrent downloader for android',
-                                      url='https://play.google.com/store/apps/details?id=com.utorrent.client&hl=en_CA&gl=US')]]
-
-    return keyboard
 
 def month_converter(date):
     # date = date.split('-')
@@ -44,7 +32,7 @@ def month_converter(date):
 
 async def search(query, category="movie"):
     req = requests.get(f'https://api.themoviedb.org/3/search/{category}?api_key={api_key}'
-                      f'&language=en-US&query={query}&page=1&include_adult=false')
+                       f'&language=en-US&query={query}&page=1&include_adult=false')
     req = req.json()['results']
     return req
 
@@ -54,12 +42,16 @@ def get_movie_type(movie: dict):
     return ['title', 'release_date'] if movie.get('title') else ['name', 'first_air_date']
 
 
-async def get_raw_image(movie_poster_url: str):
+async def get_raw_image(movie_poster_url: str) -> io.BytesIO | None:
     # Get the image for the movie asynchronously
     loop = asyncio.get_running_loop()
-    with urllib.request.urlopen(movie_poster_url) as response:
-        # Read the response content asynchronously and write it to an io.BytesIO object
-        file_obj = io.BytesIO(await loop.run_in_executor(None, response.read))
+    try:
+        with urllib.request.urlopen(movie_poster_url) as response:
+            # Read the response content asynchronously and write it to an io.BytesIO object
+            file_obj = io.BytesIO(await loop.run_in_executor(None, response.read))
+
+        return file_obj
+    except urllib.error.HTTPError:
+        return None
 
 
-    return file_obj
